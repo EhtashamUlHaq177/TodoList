@@ -1,25 +1,20 @@
- To-Do List App
-A simple and interactive To-Do List application built with HTML, CSS, and JavaScript.
-It helps you keep track of your daily tasks with an easy-to-use interface.
+# To-Do List
 
- Features
- Add New Tasks – Quickly add tasks to your list.
+A simple and interactive to-do list built using HTML, CSS, and JavaScript.  
+Allows users to add, mark, and remove tasks easily.
 
- Mark as Completed – Strike through completed tasks.
+## Tech Used
+- HTML
+- CSS
+- JavaScript
 
- Delete Tasks – Remove tasks when they’re no longer needed.
+## Features
+- Add new tasks
+- Mark tasks as completed
+- Delete tasks
+- Responsive design
 
- Responsive Layout – Works perfectly on desktop and mobile.
+## Live Demo
+> https://ehtashamulhaq177.github.io/TodoList/
 
- Tech Stack
-HTML – App structure
-
-CSS – Styling & layout
-
-JavaScript – Functionality & DOM manipulation
-
-
-
- Live Demo
-Click Here to View < https://ehtashamulhaq177.github.io/TodoList/ >
 
