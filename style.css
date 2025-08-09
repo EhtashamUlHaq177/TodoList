@@ -1,0 +1,304 @@
+body{
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    
+    color: bisque;
+    min-height: 80vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+header
+{
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    width: 80%;
+}
+
+#newtaskForm{
+    display:flex;
+}
+input ,button{
+    outline: none;
+    appearance: none;
+    background: none;
+    border: none;
+}
+
+#newTaskinput {
+    width: 400px;
+    flex: 1 1 0%;
+    padding: 1rem;
+    margin-right: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    color: white;
+}
+
+/* #newTaskinput{
+    width: 400px;
+    flex: 1 1 0%;
+    padding: 1rem;
+    margin-right: 1rem;
+    background: rgb(94, 89, 89);
+    border-radius: 1rem;
+    font-size: 1.25rem;
+} */
+#newTaskSubmit {
+    color: white;
+    font-size: 1.25rem;
+    width: 80px;
+    height: 40px;
+    font-weight: 400;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+
+/* #newTaskSubmit{
+    color: rgb(71, 36, 136);
+    font-size: 1.25rem;
+    font-weight: 800;
+    background-image: linear-gradient(to right,rgb(46, 26, 222),rgb(237, 112, 152));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+    border: solid rgb(95, 100, 26);
+    border-radius: 1rem;
+    background-color: transparent;
+} */
+main{
+    flex: 1 1 0%;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.task-list{
+    padding: 1rem;
+}
+
+.task-list h2{
+    
+  margin-left: 15%;
+
+}
+
+
+.task .content{
+    flex: 1 1 0%;
+}
+
+ .task{
+    display: flex;
+    width: 500px;
+    flex: 1 1 0%;
+    padding: 1rem;
+    margin-left: 10%;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    background: rgb(94, 89, 89);
+    border-radius: 1rem;  
+    justify-content: space-around;
+}
+#tasks .task .content .text{
+    color: white;
+    width: 100%;
+    font-size: 1.125rem;
+    display: block;
+}
+
+
+#tasks .task .actions {
+    display: felx;
+    margin: 0 -0.5rem;
+}
+.task .actions button{
+    font-size: 1.125rem;
+    cursor: pointer;
+    margin: 0 0 0.5rem;
+    font-weight:bolder;
+    text-transform: uppercase;
+}
+
+.task .actions .edit{
+    color: rgb(215, 143, 35);
+
+    border-radius: 1rem;
+    margin-right: 5px;
+}
+
+.task .actions .delete{
+    color: rgb(225, 33, 11);
+    
+    border-radius: 1rem;
+}
+
+.task .content .checkbox {
+    margin-right: 1rem;
+    width: 20px;
+    height: 20px;
+    appearance:auto;
+    
+}
+
+.task.completed .text {
+    text-decoration: line-through;
+    color: gray;
+}
+
+@media(max-width:666px){
+
+
+    .task{
+      
+        width: 400px;
+       
+    }
+
+    #newTaskinput{
+        width: 325px;
+        
+    }
+    #tasks .task .content .text{
+      
+        font-size: 1rem;
+       
+    }
+    .task{
+        padding-left: 0.5rem;
+    }
+    .task .content .checkbox {
+       
+        width: 17px;
+        height: 17px;
+        
+    }
+}
+
+@media(max-width:546px){
+
+
+    .task{
+      
+        width: 300px;
+    }
+
+    #newTaskinput{
+        width: 250px;
+        font-size: 0.9rem;
+    }
+    .task .actions .edit{
+        font-size: 0.7rem;
+       
+    }
+    
+    .task .actions .delete{
+        font-size: 0.7rem;
+    }
+    #tasks .task .content .text{
+      
+        font-size: 0.9rem;
+       
+    }
+    .task{
+        padding-left: 0.3rem;
+    }
+    .task .content .checkbox {
+       
+        width: 15px;
+        height: 15px;
+        
+    }
+  
+}
+
+@media(max-width:451px){
+    #newTaskSubmit{
+        margin-top: 5px;
+        font-size: 1rem;
+        }
+
+    .task{
+        width: 200px;
+    }
+
+    #newTaskinput{
+        width: 250px;
+        font-size: 0.8rem;
+    }
+    .task .actions .edit{
+        font-size: 0.6rem;
+       
+    }
+    
+    .task .actions .delete{
+        font-size: 0.6rem;
+    }
+    #tasks .task .content .text{
+      
+        font-size: 0.8rem;
+       
+    }
+    .task{
+        padding-left: 0.2rem;
+    }
+    .task .content .checkbox {
+       
+        width: 13px;
+        height: 13px;
+        
+    }
+  
+}
+
+@media(max-width:335px){
+    #newTaskSubmit{
+    
+    margin-top: 5px;
+    font-size: 0.8rem;
+    }
+
+    #newTaskinput{
+        width: 200px;
+        font-size: 0.7rem;
+    }
+    
+
+    .task .actions .edit{
+        font-size: 0.5rem;
+       
+    }
+    
+    .task .actions .delete{
+        font-size: 0.5rem;
+    }
+    #tasks .task .content .text{
+      
+        font-size: 0.7rem;
+       
+    }
+    .task-list{
+        padding-left: 0.1rem;
+    }
+    .task{
+        padding-left: 0.1rem;
+    }
+    .task .content .checkbox {
+       
+        width: 10px;
+        height: 10px;
+        
+    }
+}
